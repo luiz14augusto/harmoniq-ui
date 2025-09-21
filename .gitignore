@@ -1,0 +1,50 @@
+# Node / Yarn
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build output
+dist/
+storybook-static/
+coverage/
+
+# Local env files
+.env
+.env.*.local
+
+# IDEs / Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sw*
+*.swo
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc caches
+.cache/
+.parcel-cache/
+.eslintcache
+.next/
+out/
+*.tsbuildinfo
+
+# Test / Vitest
+*.lcov
+*.log
+
+# Optional: lockfiles if you use only one
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+
+# Storybook build output
+/public/storybook/
