@@ -5,13 +5,13 @@ type Variant = 'primary' | 'secondary' | 'danger' | 'ghost';
 const Base = styled.button<{ $variant: Variant }>`
   border: 0; border-radius: 10px; padding: 8px 16px; font-weight: 600;
   cursor: pointer; display:inline-flex; align-items:center; gap:8px;
-  /* @ts-ignore */ color: ${({theme, $variant}) => $variant==='secondary'||$variant==='ghost' ? theme.colors.text : '#fff'};
-  /* @ts-ignore */ background: ${({theme, $variant}) => (
+  color: ${({theme, $variant}) => $variant==='secondary'||$variant==='ghost' ? theme.colors.text : '#fff'};
+  background: ${({theme, $variant}) => (
     $variant==='primary' ? theme.colors.primary :
     $variant==='secondary' ? theme.colors.muted :
     $variant==='danger' ? theme.colors.danger : 'transparent'
   )};
-  /* @ts-ignore */ border: ${({$variant, theme}) => $variant==='ghost' ? `1px solid ${theme.colors.border}` : '0'};
+  border: ${({$variant, theme}) => $variant==='ghost' ? `1px solid ${theme.colors.border}` : '0'};
   &:disabled { opacity:.6; cursor:not-allowed; }
   &:focus-visible { outline:none; box-shadow: 0 0 0 3px rgba(255,107,107,.18); }
 `;

@@ -6,8 +6,8 @@ const Overlay = styled.div`
 `;
 const Card = styled.div`
   width:min(560px, 92vw); border-radius:14px; padding:20px;
-  /* @ts-ignore */ background:${({theme})=>theme.colors.card};
-  /* @ts-ignore */ color:${({theme})=>theme.colors.text};
+  background:${({theme})=>theme.colors.card};
+  color:${({theme})=>theme.colors.text};
 `;
 export interface ModalProps {
   open: boolean; onClose?: () => void; title?: string; children?: React.ReactNode;

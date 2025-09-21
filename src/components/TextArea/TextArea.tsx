@@ -5,9 +5,9 @@ const Wrap = styled.div`display:grid; gap:6px;`;
 const Label = styled.label` font-size: 12px; opacity:.8; `;
 const Field = styled.textarea`
   width:100%; padding:10px 12px; min-height:96px; border-radius:10px; resize:vertical;
-  /* @ts-ignore */ border:1px solid ${({theme})=>theme.colors.border};
-  /* @ts-ignore */ background:${({theme})=>theme.colors.card};
-  /* @ts-ignore */ color:${({theme})=>theme.colors.text};
+  border:1px solid ${({theme})=>theme.colors.border};
+  background:${({theme})=>theme.colors.card};
+  color:${({theme})=>theme.colors.text};
   &:focus{ outline:none; box-shadow:0 0 0 3px rgba(255,107,107,.15) }
 `;
 

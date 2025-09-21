@@ -1,14 +1,70 @@
+// src/theme/ThemeProvider.tsx
 import React from 'react';
 import { ThemeProvider as SCThemeProvider, createGlobalStyle } from 'styled-components';
-import { light, dark, DS } from './tokens';
+import type { DefaultTheme } from 'styled-components';
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode; mode?: 'light'|'dark' }> = ({ children, mode = 'light' }) => {
-  const theme: DS = mode === 'dark' ? dark : light;
-  const Global = createGlobalStyle`
-    :root { color-scheme: ${mode}; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: ${theme.colors.bg}; color: ${theme.colors.text}; }
-  `;
-  return <SCThemeProvider theme={theme}><Global />{children}</SCThemeProvider>;
+const theme: DefaultTheme = {
+  colors: {
+    // aliases usados pelos componentes
+    bg: '#0B1220',
+    card: '#111827',
+    subtle: '#1F2937',
+
+    // paleta padrão/compat
+    primary: '#3B82F6',
+    onPrimary: '#FFFFFF',
+    secondary: '#0EA5E9',
+    onSecondary: '#FFFFFF',
+
+    background: '#0B1220', // alias de bg
+    surface: '#111827',    // alias de card
+    border: '#1F2937',
+
+    success: '#10B981',
+    warning: '#F59E0B',
+    danger:  '#EF4444',
+    muted:   '#9CA3AF',
+    text:    '#E5E7EB',
+  },
+
+  radii: {
+    sm: '6px',
+    md: '10px',
+    lg: '14px',
+    pill: '999px',
+  },
+
+  spacing: (n: number) => `${n * 4}px`,
+
+  shadows: {
+    sm: '0 1px 2px rgba(0,0,0,0.2)',
+    md: '0 4px 12px rgba(0,0,0,0.25)',
+    lg: '0 12px 30px rgba(0,0,0,0.35)',
+  },
+
+  zIndex: {
+    modal: 1300,
+    toast: 1400,
+    dropdown: 1500,
+  },
+};
+
+const Global = createGlobalStyle`
+  :root { color-scheme: dark; }
+  html, body, #__next { height: 100%; }
+  body {
+    margin: 0;
+    background: ${({ theme }) => theme.colors.bg};
+    color: ${({ theme }) => theme.colors.text};
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  }
+`;
+
+export const ThemeProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
+  return (
+    <SCThemeProvider theme={theme}>
+      <Global />
+      {children}
+    </SCThemeProvider>
+  );
 };
