@@ -17,7 +17,6 @@
     "msw:init": "msw init .storybook/public --save",
     "size": "size-limit",
     "size:ci": "size-limit --ci",
-    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes",
     "analyze": "ANALYZE=1 vite build"
   },
   "dependencies": {
@@ -42,7 +41,6 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-v8": "^3.2.4",
-    "chromatic": "^11.12.7",
     "eslint": "^9.14.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-react": "^7.37.1",

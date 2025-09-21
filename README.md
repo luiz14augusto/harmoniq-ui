@@ -2,11 +2,8 @@
 
 [![CI](https://img.shields.io/github/actions/workflow/status/luiz14augusto/harmoniq-ui/ci.yml?label=CI)](https://github.com/luiz14augusto/harmoniq-ui/actions/workflows/ci.yml)
 [![Storybook Pages](https://img.shields.io/github/actions/workflow/status/luiz14augusto/harmoniq-ui/deploy-storybook-gh-pages.yml?label=Storybook%20Pages)](https://github.com/luiz14augusto/harmoniq-ui/actions/workflows/deploy-storybook-gh-pages.yml)
-[![Chromatic](https://img.shields.io/badge/Chromatic-publish-blue)](https://www.chromatic.com/)
-[![codecov](https://codecov.io/gh/luiz14augusto/harmoniq-ui/graph/badge.svg)](https://codecov.io/gh/luiz14augusto/harmoniq-ui)
 
-Biblioteca de componentes **tipada** e **testada** para React, construída com **Vite + TypeScript**, documentada em **Storybook** e coberta por **Vitest/RTL**.  
-Inclui workflows de **CI**, **deploy do Storybook no GitHub Pages** e **publicação no Chromatic**, além de relatório de **cobertura no Codecov** e **Size Limit**.
+Biblioteca de componentes **tipada** e **testada** para React, construída com **Vite + TypeScript**, documentada em **Storybook** e coberta por **Vitest/RTL**.
 
 ## ✨ Principais recursos
 
