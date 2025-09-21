@@ -16,9 +16,6 @@ jobs:
         run: yarn --frozen-lockfile || yarn
       - name: Build Storybook
         run: yarn build-storybook
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with: { path: ./storybook-static }
   deploy:
     needs: build
     runs-on: ubuntu-latest

@@ -55,7 +55,7 @@ export const Overview: Story = {
           <Drawer open={openDrawer} onClose={()=>setOpenDrawer(false)} title="Menu">
             Items inside the drawer
           </Drawer>
-          <Toast open={openToast}>Upload concluído!</Toast>
+          <Toast open={openToast}>Teste!</Toast>
         </section>
       </div>
     );

@@ -10,4 +10,4 @@ const meta: Meta<typeof Toast> = {
 };
 export default meta;
 type Story = StoryObj<typeof Toast>;
-export const Playground: Story = { args: { children: 'Upload concluído!' } };
+export const Playground: Story = { args: { children: 'Teste!' } };
