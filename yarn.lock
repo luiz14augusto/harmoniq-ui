@@ -2254,11 +2254,6 @@ chokidar@^4.0.3:
   dependencies:
     readdirp "^4.0.1"
 
-chromatic@^11.12.7:
-  version "11.29.0"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-11.29.0.tgz#da556dbd3b043e8c6a3134d1afa3bb4ad7317410"
-  integrity sha512-yisBlntp9hHVj19lIQdpTlcYIXuU9H/DbFuu6tyWHmj6hWT2EtukCCcxYXL78XdQt1vm2GfIrtgtKpj/Rzmo4A==
-
 chromium-bidi@7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/chromium-bidi/-/chromium-bidi-7.2.0.tgz#3bbd593362d09af83c955baf8d0ebf88ab3aa06b"
@@ -5012,7 +5007,7 @@ strip-literal@^3.0.0:
   dependencies:
     js-tokens "^9.0.1"
 
-styled-components@^6.1.13:
+styled-components@^6.1.19:
   version "6.1.19"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-6.1.19.tgz#9a41b4db79a3b7a2477daecabe8dd917235263d6"
   integrity sha512-1v/e3Dl1BknC37cXMhwGomhO8AkYmN41CqyX9xhUDxry1ns3BFQy2lLDRQXJRdVVWB9OHemv/53xaStimvWyuA==
